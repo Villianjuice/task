@@ -1,0 +1,42 @@
+.table {
+  font-family: sans-serif;
+  text-align-last: left;
+  border-spacing: 8px;
+  border-collapse: collapse;
+  // font-size: 14px;
+  &__head {
+    background: rgb(222, 222, 245);
+  }
+  th {
+    font-weight: 500;
+    cursor: pointer;
+  }
+  th, td {
+    padding: 8px;
+    border: 1px solid rgb(156, 151, 151);
+  }
+  &__pagination {
+    background: rgb(222, 222, 245);
+
+  }
+  &__width {
+    &-name {
+      width: 580px;
+    }
+    &-code {
+      width: 77px;
+    }
+    
+    &-biom {
+      width: 150px;
+    }
+  }
+}
+
+@media (min-width: 350px) and (max-width: 450px) {
+  .table {
+    th, td {
+      padding: 4px;
+    }
+  }
+}

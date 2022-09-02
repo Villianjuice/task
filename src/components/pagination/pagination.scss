@@ -1,0 +1,43 @@
+.pagination{
+  display: flex;
+  align-items: center;
+  background: rgb(222, 222, 245);
+  width: 100%;
+  span {
+    margin-right: 10px;
+    color: inherit;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__btn {
+    margin: 0 10px;
+    color: rgb(80, 80, 228);
+    text-decoration: underline;
+    &:hover {
+      color: rgb(136, 74, 136);
+    }
+    &-active {
+      font-size: 14px;
+      margin: 0 10px;
+      color: black;
+      &::before{
+        content: '[';
+      };
+      &::after{
+        content: ']';
+      };
+    }
+  }
+}
+@media (min-width: 350px) and (max-width: 450px) {
+  .pagination {
+    &__btn{
+      &-active {
+        font-size: 10px;
+      }
+    }
+  }
+}

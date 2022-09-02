@@ -1,0 +1,25 @@
+@import './reset.scss';
+.App {
+  max-width: 1000px;
+  margin: 15px auto;
+  padding: 0 15px;
+  font-size: 14px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 450px) {
+  .App {
+    font-size: 9px;
+    padding: 0 8px;
+  }
+
+}
+@media (max-width: 380px)  {
+  .App {
+    font-size: 8px;
+    padding: 0 6px;
+  }
+}

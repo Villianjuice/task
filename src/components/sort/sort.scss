@@ -1,0 +1,14 @@
+.sort {
+  margin-left: 22px;
+  display: flex;
+  span {
+    margin-left: 6px;
+  }
+  .desc{
+    // margin-left: 0;
+    writing-mode: vertical-lr;
+    transform: rotate(90deg);
+    margin-top: 3px;
+    // margin-bottom: 2px;
+  }
+}
